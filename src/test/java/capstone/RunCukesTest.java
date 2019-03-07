@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
         strict = true,
         glue = {"capstone/steps"},
         features = {"src/test/resources/"},
-        tags = {""@capstone1,@capstone2"},
+        tags = {"@capstone1,@capstone2"},
         plugin = {"pretty", "json:target/cucumber.json", "pretty:target/cucumber-pretty.txt", "html:target/cucumber-html", "rerun:target/rerun.txt"}
 //        plugin = {"pretty"}, monochrome = true
 
