@@ -19,7 +19,7 @@ public class TestPage extends BasePage {
 
 
     public void navigateToHomePage(){
-        webURL ="http://34.201.31.160:8080/shop";
+        webURL ="http://3.209.1.231:8080/shop";
         driver.get(webURL);
 
     }
