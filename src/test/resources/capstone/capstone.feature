@@ -1,6 +1,5 @@
-Feature: Capstone project Test Cases
-  #Background:
-
+Feature: Capstone project Test Cases webhook testing
+  
 
   @capstone1
   Scenario: Visit shopping web application and check the page title
