@@ -1,5 +1,4 @@
-Feature: Todo capstone project TCs ss
-
+Feature: Capstone project Test Cases
   #Background:
 
 
