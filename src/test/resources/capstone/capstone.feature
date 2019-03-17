@@ -1,4 +1,4 @@
-Feature: Capstone project Test Cases scm polling
+Feature: Capstone project Test Cases scm polling 1
   
 
   @capstone1
