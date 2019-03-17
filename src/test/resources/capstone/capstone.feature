@@ -1,4 +1,4 @@
-Feature: Capstone project Test Cases webhook testing
+Feature: Capstone project Test Cases scm polling
   
 
   @capstone1
