@@ -11,6 +11,7 @@ import org.junit.runner.RunWith;
         features = {"src/test/resources/"},
         tags = {"@capstone1,@capstone2"},
         plugin = {"pretty", "json:target/cucumber.json", "pretty:target/cucumber-pretty.txt", "html:target/cucumber-html", "rerun:target/rerun.txt"}
+
 //        plugin = {"pretty"}, monochrome = true
 
 )
