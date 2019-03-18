@@ -72,7 +72,7 @@ public class TestPage extends BasePage {
     public void verifyOption2(String optionName){
         try{
           Assert.assertTrue("Option did not found" +optionName,txtSearch.isDisplayed());
-        }catch(Excpetion e){
+        }catch(Exception e){
             exceptionFlag = true;
             Assert.assertFalse("Option did not found" +optionName,true);
         }
