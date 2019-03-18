@@ -25,6 +25,9 @@ public class AutomationHooks {
         System.out.println("scenario is =" + scenario.getStatus());
         System.out.println("scenario is =" + scenario.getSourceTagNames());
 
+        if(BasePage.exceptionFlag == true)
+            Assert.assertFail("After hooks passed",true);
+                              
         WebDriver driver = BasePage.getDriver();
         driver.quit();
     }
