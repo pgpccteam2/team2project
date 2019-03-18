@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class TestPage extends BasePage {
 
-    String webURL = "http://3.209.1.231:8080/shop;
+    String webURL = "http://3.209.1.231:8080/shop";
 
 
     @FindBy(xpath="//a[contains(text(),'Sign in')]")
