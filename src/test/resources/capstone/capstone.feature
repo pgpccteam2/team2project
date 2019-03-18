@@ -11,5 +11,5 @@ Feature: Capstone project Test Cases webhook testing 1
   @capstone2
   Scenario: Visit shopping web application and check the shopping cart is displayed
     Given I am on web app home page
-    Then I verify the option "Shopping cart" is displayed
+    Then I verify the option2 "search textbox is displayed
 
