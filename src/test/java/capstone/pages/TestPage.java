@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class TestPage extends BasePage {
 
-    String webURL = "https://medium.com/";
+    String webURL = "http://3.209.1.231:8080/shop;
 
 
     @FindBy(xpath="//a[contains(text(),'Sign in')]")
@@ -16,6 +16,9 @@ public class TestPage extends BasePage {
 
     @FindBy(xpath="//h1//a[contains(text(),'Shopizer')]")
     public WebElement lblTitle;
+
+    @FindBy(id="searchField1")
+    public WebElement txtSearch;
 
 
     public void navigateToHomePage(){
@@ -32,10 +35,23 @@ public class TestPage extends BasePage {
     }
 
     public void verifyOption(String optionName){
-        if(lblTitle.isDisplayed())
-            System.out.println(" option is found:"+ optionName);
-        else
-            Assert.assertTrue("Option did not found" +optionName,false);
+    
+      switch(optionName.toLowercase()){
+          case "shopizer":
+              Assert.assertTrue("Option did not found" +optionName,lblTitle.isDisplayed());
+              break;
+          case "search textbox":
+              Assert.assertTrue("Option did not found" +optionName,txtSearch.isDisplayed());
+              break;
+          default:
+              System.out.println("Case is not present for:"+ optionName);
+              
+                 
+      }
+//         if(lblTitle.isDisplayed())
+//             System.out.println(" option is found:"+ optionName);
+//         else
+//             Assert.assertTrue("Option did not found" +optionName,false);
 
         try {
             Thread.sleep(20);
