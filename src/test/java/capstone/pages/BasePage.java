@@ -10,12 +10,14 @@ public class BasePage {
 
     public static WebDriver driver;
     public WebDriverWait wait;
+    public static boolean exceptionFlag;
 
     public BasePage(){
        // this.driver = driver;
         this.driver = Browser.launch();
         PageFactory.initElements(driver, this);
         wait = new WebDriverWait(driver,15);
+        exceptionFlag = false;
     }
 
     public static WebDriver getDriver() {
