@@ -37,9 +37,16 @@ public class WebAppSteps extends BaseStep{
         testPage.verifyTitleLable(labelName);
     }
 
-    @Then("^I verify the option \"([^\"]*)\" is displayed$")
-    public void iVerifyTheOptionIsDisplayed(String optionName) throws Throwable {
+    @Then("^I verify the option1 \"([^\"]*)\" is displayed$")
+    public void iVerifyTheOption1IsDisplayed(String optionName) throws Throwable {
         // Write code here that turns the phrase above into concrete actions
-        testPage.verifyOption(optionName);
+        testPage.verifyOption1(optionName);
     }
+    ///
+    @Then("^I verify the option2 \"([^\"]*)\" is displayed$")
+    public void iVerifyTheOption2IsDisplayed(String optionName) throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        testPage.verifyOption2(optionName);
+    }
+    ///
 }
