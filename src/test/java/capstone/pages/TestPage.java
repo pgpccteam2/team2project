@@ -36,7 +36,7 @@ public class TestPage extends BasePage {
 
     public void verifyOption(String optionName){
     
-      switch(optionName.toLowercase()){
+      switch(optionName.toLowerCase()){
           case "shopizer":
               Assert.assertTrue("Option did not found" +optionName,lblTitle.isDisplayed());
               break;
