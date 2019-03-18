@@ -34,25 +34,43 @@ public class TestPage extends BasePage {
             Assert.assertTrue("Title did not found"+labelName,false);
     }
 
-    public void verifyOption(String optionName){
+//     public void verifyOption(String optionName){
     
-      switch(optionName.toLowerCase()){
-          case "shopizer":
-              Assert.assertTrue("Option did not found" +optionName,lblTitle.isDisplayed());
-              break;
-          case "search textbox":
-              Assert.assertTrue("Option did not found" +optionName,txtSearch.isDisplayed());
-              break;
-          default:
-              System.out.println("Case is not present for:"+ optionName);
+//       switch(optionName.toLowerCase()){
+//           case "shopizer":
+//               Assert.assertTrue("Option did not found" +optionName,lblTitle.isDisplayed());
+//               break;
+//           case "search textbox":
+//               Assert.assertTrue("Option did not found" +optionName,txtSearch.isDisplayed());
+//               break;
+//           default:
+//               System.out.println("Case is not present for:"+ optionName);
               
                  
-      }
-//         if(lblTitle.isDisplayed())
-//             System.out.println(" option is found:"+ optionName);
-//         else
-//             Assert.assertTrue("Option did not found" +optionName,false);
+//       }
+// //         if(lblTitle.isDisplayed())
+// //             System.out.println(" option is found:"+ optionName);
+// //         else
+// //             Assert.assertTrue("Option did not found" +optionName,false);
 
+//         try {
+//             Thread.sleep(20);
+//         } catch (InterruptedException e) {
+//             e.printStackTrace();
+//         }
+//     }
+//////////////
+    public void verifyOption1(String optionName){
+          Assert.assertTrue("Option did not found" +optionName,lblTitle.isDisplayed());
+        try {
+            Thread.sleep(20);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void verifyOption2(String optionName){
+          Assert.assertTrue("Option did not found" +optionName,txtSearch.isDisplayed());
         try {
             Thread.sleep(20);
         } catch (InterruptedException e) {
@@ -61,6 +79,8 @@ public class TestPage extends BasePage {
     }
 
 
+    
+   //// 
     public void click(String btnName){
 
         if(btnName.toLowerCase().equalsIgnoreCase("sign in")){
