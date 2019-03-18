@@ -5,6 +5,7 @@ import cucumber.api.Scenario;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import org.openqa.selenium.WebDriver;
+import org.junit.Assert;
 
 public class AutomationHooks {
     public static String ScenarioName = "";
@@ -26,7 +27,7 @@ public class AutomationHooks {
         System.out.println("scenario is =" + scenario.getSourceTagNames());
 
         if(BasePage.exceptionFlag == true)
-            Assert.assertFail("After hooks passed",true);
+            Assert.assertFail("After hooks failed",true);
                               
         WebDriver driver = BasePage.getDriver();
         driver.quit();
