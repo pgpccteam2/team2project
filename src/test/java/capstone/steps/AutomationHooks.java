@@ -27,7 +27,7 @@ public class AutomationHooks {
         System.out.println("scenario is =" + scenario.getSourceTagNames());
 
         if(BasePage.exceptionFlag == true)
-            Assert.assertFail("After hooks failed",true);
+            Assert.assertFalse("After hooks failed",true);
                               
         WebDriver driver = BasePage.getDriver();
         driver.quit();
