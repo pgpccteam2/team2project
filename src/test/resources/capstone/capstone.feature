@@ -1,4 +1,4 @@
-Feature: Capstone project Test Cases webhook testing 1
+Feature: Capstone project Test Cases
   
 
   @capstone1
