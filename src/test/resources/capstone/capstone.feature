@@ -1,4 +1,4 @@
-Feature: Capstone project Test cases
+Feature: Capstone project Test Cases
   
 
   @capstone1
