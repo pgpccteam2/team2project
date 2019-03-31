@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class TestPage extends BasePage {
 
-    String webURL = "http://3.209.1.231:8080/shop";
+    String webURL = "http://54.90.133.135:8080/shop";
 
 
     @FindBy(xpath="//a[contains(text(),'Sign in')]")
@@ -22,7 +22,7 @@ public class TestPage extends BasePage {
 
 
     public void navigateToHomePage(){
-        webURL ="http://3.209.1.231:8080/shop";
+        webURL ="http://54.90.133.135:8080/shop";
         driver.get(webURL);
 
     }
