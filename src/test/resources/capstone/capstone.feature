@@ -1,4 +1,4 @@
-Feature: Capstone project Test Cases
+Feature: Capstone project Test Cases file
   
 
   @capstone1
