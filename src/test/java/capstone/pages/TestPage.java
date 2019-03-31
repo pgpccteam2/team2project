@@ -8,6 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class TestPage extends BasePage {
 
+    //url of the application server to test
     String webURL = "http://54.90.133.135:8080/shop";
 
 
