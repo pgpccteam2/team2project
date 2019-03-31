@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class TestPage extends BasePage {
 
-    //url of the application server to test - Shopiser app
+    //url of the application server to test 
     String webURL = "http://18.210.101.237:8080/shop";
 
 
